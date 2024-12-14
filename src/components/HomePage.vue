@@ -28,13 +28,13 @@
 <style scoped>
 @media (max-width: 768px) {
     #home {
-        display: flex;
+        display: flex !important;
         flex-direction: column !important;
     }
 
     img[src='/src/assets/marsh.png'] {
-        width: 250px;
-        filter:drop-shadow(0px 0px 200px #FFFFFF)
+        width: 250px !important;
+        filter:drop-shadow(0px 0px 200px #FFFFFF) !important;
     }
 
     a {
@@ -51,7 +51,7 @@
     }
 
     hr {
-        width: 320px;
+        width: 320px !important;
         border: 1px solid #7BB2B2 !important;
     }
 

@@ -3,7 +3,7 @@
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 
 </script>
 
@@ -19,14 +19,18 @@
     background-color: #D2E7E8;
     color: black;
   }
+
+
 }
 
-h1, h2, h3, h4, h5, h6, p {
- font-family: Omnium;
- text-rendering: optimizeLegibility;
+h1, p, a, span {
+  font-family: Omnium;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 </style>
 

@@ -3,22 +3,22 @@
         <div id="home">
             <div id="info">
                 <img src='/src/assets/marsh.png' width="481.97">
-                <h1>Rekku484</h1>
-                <h2>Furry Artist</h2>
+                <a>Rekku484</a>
+                <span>Furry Artist</span>
             </div>
             <hr />
             <div id="nav_view">
                 <div class="nav">
-                    <RouterLink to="/artworks"><h3>Artworks</h3></RouterLink>
+                    <RouterLink to="/artworks" style="text-decoration:none"><p>Artworks</p></RouterLink>
                 </div>
                 <div class="nav">
-                    <RouterLink to="/characters"><h3>Characters</h3></RouterLink>
+                    <RouterLink to="/characters" style="text-decoration:none"><p>Characters</p></RouterLink>
                 </div>
                 <div class="nav">
-                    <RouterLink to="/commission"><h3>Commission</h3></RouterLink>
+                    <RouterLink to="/commission" style="text-decoration:none"><p>Commission</p></RouterLink>
                 </div>
                 <div class="nav">
-                    <a href="https://github.com/Rekku484/Rekku484-portfolio-v2"><h3>Github</h3></a>
+                    <a href="https://github.com/Rekku484/Rekku484-portfolio-v2" style="text-decoration:none"><p>Github</p></a>
                 </div>
             </div>
         </div>
@@ -34,17 +34,18 @@
 
     img[src='/src/assets/marsh.png'] {
         width: 250px;
+        filter:drop-shadow(0px 0px 200px #FFFFFF)
     }
 
-    h1 {
+    a {
         font-size: 40px !important;
     }
 
-    h2 {
-        margin-top: -2rem !important;
+    span {
+        font-size: 24px !important;
     }
 
-    h3 {
+    p {
         font-size: 30px !important;
         text-align: center !important;
     }
@@ -59,6 +60,21 @@
     right: 0rem !important;
 }
 
+
+}
+
+@media (prefers-color-scheme: light) {
+    img[src='/src/assets/marsh.png'] {
+    filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.25)) !important;
+    }
+
+    .nav {
+        filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.75)) !important;
+    }
+
+    p {
+    color:black;
+}
 
 }
 
@@ -89,7 +105,7 @@
 }
 
 hr {
-    border: 3px solid #7BB2B2;
+    border: 1.5px solid #7BB2B2;
     margin-right: 5vw;
     margin-left: 5vw;
 }
@@ -102,28 +118,30 @@ hr {
 
 .nav {
     margin-top: -2rem;
+    filter: drop-shadow(0px 5px 25px rgba(255, 255, 255, 0.75));
 }
-
-
 
 
 img[src='/src/assets/marsh.png'] {
     margin-left: 2.5rem;
     margin-bottom: -1rem;
+    filter: drop-shadow(0px 0px 200px rgba(255, 255, 255, 0.25));
+
 }
 
-h1 {
+a {
     font-size: 64px;
 }
 
-h2 {
-    margin-top: -3rem;
+span {
     font-size: 40px;
 }
 
-h3 {
+p {
     font-size: 55px;
     text-align: left;
+    color:white;
 }
+
 
 </style>

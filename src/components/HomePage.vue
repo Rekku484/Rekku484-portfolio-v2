@@ -18,7 +18,7 @@
                     <RouterLink to="/commission"><h3>Commission</h3></RouterLink>
                 </div>
                 <div class="nav">
-                    <h3>Github</h3>
+                    <a href="https://github.com/Rekku484/Rekku484-portfolio-v2"><h3>Github</h3></a>
                 </div>
             </div>
         </div>

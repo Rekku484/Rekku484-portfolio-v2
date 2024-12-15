@@ -2,7 +2,7 @@
     <div id="entirety">
         <div id="home">
             <div id="info">
-                <img src='/src/assets/marsh.png' width="481.97">
+                <img src='/src/assets/marsh.png' width="481.97px" style="@media (max-width: 810px) {width: 250px !important;}">
                 <a>Rekku484</a>
                 <span>Furry Artist</span>
             </div>
@@ -26,13 +26,13 @@
 </template>
 
 <style scoped>
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     #home {
         display: flex !important;
         flex-direction: column !important;
     }
 
-    img[src='/src/assets/marsh.png'] {
+    img[src*='marsh'] {
         width: 250px !important;
         filter:drop-shadow(0px 0px 200px #FFFFFF) !important;
     }
@@ -64,7 +64,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    img[src='/src/assets/marsh.png'] {
+    img[src*="marsh"] {
     filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.25)) !important;
     }
 
@@ -73,7 +73,7 @@
     }
 
     p {
-    color:black;
+    color:black !important;
 }
 
 }
@@ -102,6 +102,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+img[src="/src/assets/marsh.png"] {
+    width: 481.97px;
 }
 
 hr {

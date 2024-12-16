@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../components/HomePage.vue";
-import ArtworkPage from "../components/ArtworkPage.vue";
-import CharacterPage from "../components/CharacterPage.vue";
-import CommissionPage from "../components/CommissionPage.vue";
+import HomePage from "../views/HomePage.vue";
+import ArtworkPage from "../views/ArtworkPage.vue";
+import CharacterPage from "../views/CharacterPage.vue";
+import CommissionPage from "../views/CommissionPage.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

@@ -34,7 +34,7 @@
 
     img[src*='marsh'] {
         width: 250px !important;
-        filter:drop-shadow(0px 0px 200px #FFFFFF) !important;
+        filter:drop-shadow(0px 0px 50px rgba(255, 255, 255, 0.25)) !important;
     }
 
     a {
@@ -52,7 +52,7 @@
 
     hr {
         width: 320px !important;
-        border: 1px solid #7BB2B2 !important;
+        border: 1px solid inherit !important;
     }
 
     #home, hr, #nav_view {
@@ -60,12 +60,16 @@
     right: 0rem !important;
 }
 
+    #info {
+        margin-right: 0rem !important;
+    }
+
 
 }
 
 @media (prefers-color-scheme: light) {
     img[src*="marsh"] {
-    filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.25)) !important;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.50)) !important;
     }
 
     .nav {
@@ -74,7 +78,13 @@
 
     p {
     color:black !important;
-}
+    }
+
+    hr {
+    border: 1.5px solid #7BB2B2 !important;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    }
 
 }
 
@@ -82,13 +92,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 98vh;
+    height: 100vh;
     overflow: hidden;
+    margin: -0.5rem;
 }
 
 #home, hr, #nav_view {
     position: relative;
-    right: 3rem;
+    right: 5rem;
 }
 
 #home {
@@ -102,6 +113,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 10rem;
 }
 
 img[src="/src/assets/marsh.png"] {
@@ -109,7 +121,7 @@ img[src="/src/assets/marsh.png"] {
 }
 
 hr {
-    border: 1.5px solid #7BB2B2;
+    border: 1.5px solid #386161;
     margin-right: 5vw;
     margin-left: 5vw;
 }
@@ -126,10 +138,10 @@ hr {
 }
 
 
-img[src='/src/assets/marsh.png'] {
+img[src*='marsh'] {
     margin-left: 2.5rem;
     margin-bottom: -1rem;
-    filter: drop-shadow(0px 0px 200px rgba(255, 255, 255, 0.25));
+    filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.25)) !important;
 
 }
 
@@ -146,6 +158,5 @@ p {
     text-align: left;
     color:white;
 }
-
 
 </style>

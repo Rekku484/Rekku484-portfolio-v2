@@ -20,6 +20,9 @@
     color: black;
   }
 
+  h1, p, a, span {
+    color: black !important;
+  }
 
 }
 
@@ -28,6 +31,7 @@ h1, p, a, span {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 

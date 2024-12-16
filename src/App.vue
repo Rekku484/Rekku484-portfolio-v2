@@ -20,13 +20,13 @@
     color: black;
   }
 
-  h1, p, a, span {
+  h1, h2, p, a, span {
     color: black !important;
   }
 
 }
 
-h1, p, a, span {
+h1, h2, p, a, span {
   font-family: Omnium;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

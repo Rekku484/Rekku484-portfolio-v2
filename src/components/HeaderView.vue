@@ -18,10 +18,53 @@
         <div class="nav">
             <a href="https://github.com/Rekku484/Rekku484-portfolio-v2" style="text-decoration:none"><p>Github</p></a>
         </div>
+        <div class="hamburger" @click="toggleSidebar"><Menu :size='24'></Menu></div>
+    </div>
+    <div id="sidebar">
+        <div :class="{ 'isOpen':mobular }"></div>
     </div>
 </template>
 
+<script lang="ts">
+export default {
+    name: 'HeaderView',
+    data() {
+        return {
+            mobular: false
+        }
+    },
+    methods: {
+        toggleSidebar() {
+            this.mobular = !this.mobular
+        } 
+    }
+}
+
+</script>
+
+<script setup lang="ts">
+import { Menu } from 'lucide-vue-next';
+
+</script>
+
+
+
 <style scoped>
+@media (max-width: 810px) {
+    
+}
+
+@media (prefers-color-scheme: light) {
+    Menu {
+        color: black !important;
+        size: 24px;
+    }
+}
+
+Menu {
+    color: white;
+}
+
 #header {
     display: flex;
     flex-direction: row;

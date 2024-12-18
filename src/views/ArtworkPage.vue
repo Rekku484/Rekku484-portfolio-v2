@@ -1,6 +1,8 @@
 <template>
     <HeaderView></HeaderView>
     <p>Artworks</p>
+    <div id="art-container">
+    </div>
 </template>
 
 <script setup lang="ts">

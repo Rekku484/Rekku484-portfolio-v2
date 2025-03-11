@@ -44,9 +44,10 @@ export default {
 </script>
 
 <style scoped>
+
 @media (prefers-color-scheme: light) {
     #sidebar {
-        background: #D2E7E8;
+        background-color: #D2E7E8 !important;
     }
 }
 
@@ -69,7 +70,7 @@ export default {
         left: -100%;
         width: 70%;
         height: 100%;
-        background: #0A2328;
+        background-color: #0A2328;
         transition: left 0.3s ease-in-out;
         display: flex;
         flex-direction: column;

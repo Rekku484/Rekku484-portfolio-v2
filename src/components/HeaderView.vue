@@ -44,6 +44,12 @@ export default {
 </script>
 
 <style scoped>
+@media (prefers-color-scheme: light) {
+    #sidebar {
+        background: #D2E7E8;
+    }
+}
+
 @media (max-width: 810px) {
     .nav-links {
         display: none !important
